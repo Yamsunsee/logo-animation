@@ -1,0 +1,225 @@
+:root {
+  --background: #1a2b34;
+  --red: #ea5e5e;
+  --yellow: #f7ba3e;
+  --green: #1abc9c;
+  --blue: #56b3b4;
+  --purple: #bf85bf;
+  --gray: #4d616e;
+  --size: 1;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--size) * 1rem);
+}
+
+.row {
+  height: calc(var(--size) * 1rem);
+  display: flex;
+  gap: calc(var(--size) * 1rem);
+  translate: calc(var(--offset) * 20rem);
+  opacity: 0.3;
+  animation: show 1s ease-out calc(var(--delay, 1) * 100ms + 500ms) forwards;
+}
+
+.row:nth-child(1) {
+  --delay: 1;
+  --offset: -3;
+}
+.row:nth-child(2) {
+  --delay: 2;
+  --offset: 4;
+}
+.row:nth-child(3) {
+  --delay: 3;
+  --offset: -1;
+}
+.row:nth-child(4) {
+  --delay: 4;
+  --offset: 3;
+}
+.row:nth-child(5) {
+  --delay: 5;
+  --offset: -3;
+}
+.row:nth-child(6) {
+  --delay: 6;
+  --offset: 3;
+}
+.row:nth-child(7) {
+  --delay: 7;
+  --offset: -1;
+}
+.row:nth-child(8) {
+  --delay: 8;
+  --offset: 3;
+}
+.row:nth-child(9) {
+  --delay: 9;
+  --offset: -5;
+}
+.row:nth-child(10) {
+  --delay: 10;
+  --offset: 2;
+}
+.row:nth-child(11) {
+  --delay: 11;
+  --offset: -4;
+}
+.row:nth-child(12) {
+  --delay: 12;
+  --offset: 3;
+}
+.row:nth-child(13) {
+  --delay: 13;
+  --offset: -4;
+}
+.row:nth-child(14) {
+  --delay: 14;
+  --offset: 1;
+}
+.row:nth-child(15) {
+  --delay: 15;
+  --offset: -2;
+}
+.row:nth-child(16) {
+  --delay: 16;
+  --offset: 1;
+}
+.row:nth-child(17) {
+  --delay: 17;
+  --offset: -2;
+}
+
+@keyframes show {
+  100% {
+    translate: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  100% {
+    translate: calc(var(--offset) * 20rem);
+    opacity: 0.3;
+  }
+}
+
+.cell {
+  width: calc(var(--length) * 1rem);
+  height: calc(var(--size) * 1rem);
+  border-radius: calc(var(--size) * 1rem);
+  background-color: var(--gray);
+}
+
+.cell.blue {
+  background-color: var(--blue);
+}
+
+.cell.red {
+  background-color: var(--red);
+}
+
+.cell.yellow {
+  background-color: var(--yellow);
+}
+
+.cell.green {
+  background-color: var(--green);
+}
+
+.cell.purple {
+  background-color: var(--purple);
+}
+
+.cell.length-2 {
+  --length: 2;
+}
+
+.cell.length-3 {
+  --length: 3;
+}
+
+.cell.length-4 {
+  --length: 4;
+}
+
+.cell.length-5 {
+  --length: 5;
+}
+
+.cell.length-6 {
+  --length: 6;
+}
+
+.cell.length-7 {
+  --length: 7;
+}
+
+.cell.length-8 {
+  --length: 8;
+}
+
+.cell.length-9 {
+  --length: 9;
+}
+
+.cell.length-10 {
+  --length: 10;
+}
+
+.cell.length-11 {
+  --length: 11;
+}
+
+.cell.length-12 {
+  --length: 12;
+}
+
+.cell.length-13 {
+  --length: 13;
+}
+
+.cell.length-14 {
+  --length: 14;
+}
+
+.cell.length-15 {
+  --length: 15;
+}
+
+.cell.length-16 {
+  --length: 16;
+}
+
+.cell.length-17 {
+  --length: 17;
+}
+
+.cell.length-18 {
+  --length: 18;
+}
+
+.cell.length-19 {
+  --length: 19;
+}
+
+.cell.length-20 {
+  --length: 20;
+}
